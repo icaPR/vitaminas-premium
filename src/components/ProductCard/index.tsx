@@ -107,7 +107,7 @@ export default function ProductCard({ product }: { product: Product }) {
           )}
         </div>
 
-        <Link to={""}>
+        <Link to={"/checkout"}>
           <button
             className="mt-4 bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-lg transition-colors w-full"
             onClick={saveToCheckout}

@@ -7,13 +7,14 @@ import Product from "../../components/Product";
 import Testimonials from "../../components/Testimonials";
 import VideoPlayer from "../../components/VideoPlayer";
 import Benefits from "../../components/Benefits";
+import Footer from "../../components/Footer";
 
 const useUtmTracker = () => {
   const location = useLocation();
 
   useEffect(() => {
     const params = new URLSearchParams(location.search);
-    const utmParams = {};
+    const utmParams: { [key: string]: string | null } = {};
     const utmKeys = [
       "utm_source",
       "utm_medium",
@@ -47,6 +48,7 @@ function LandingPage() {
         <Benefits />
         <Product />
         <Testimonials />
+        <Footer />
       </div>
     </>
   );
