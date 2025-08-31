@@ -1,9 +1,31 @@
-export default function Button() {
+import { Link } from "react-router-dom";
+
+const getUtmQueryString = () => {
+  const storedParams = sessionStorage.getItem("utm_params");
+  if (storedParams) {
+    const utms = JSON.parse(storedParams);
+    return new URLSearchParams(utms).toString();
+  }
+  return "";
+};
+
+interface ButtonProps {
+  to: string;
+  children: React.ReactNode;
+}
+
+export default function Button({ to, children }: ButtonProps) {
+  const utmQueryString = getUtmQueryString();
+  const destination = `${to}?${utmQueryString}`;
+
   return (
-    <div className="flex justify-center my-8">
-      <button className="bg-white text-green-600 font-bold px-8 py-3 rounded-full text-lg hover:bg-gray-100 transition-colors shadow-lg ">
-        🛒 COMPRAR AGORA - 25% OFF
-      </button>
+    <div className="text-center my-8">
+      <Link
+        to={destination}
+        className="bg-green-500 hover:bg-green-600 text-white font-bold py-4 px-8 rounded-lg shadow-lg transition duration-300 ease-in-out transform hover:scale-105"
+      >
+        {children}
+      </Link>
     </div>
   );
 }

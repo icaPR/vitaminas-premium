@@ -38,6 +38,7 @@ export default function TestimonialCard({
           src={testimonial.image}
           alt={testimonial.name}
           className="w-20 h-20 rounded-full object-cover border-4 border-white shadow-md"
+          loading="lazy"
         />
       </div>
 

@@ -11,7 +11,12 @@ export default function BenefitCard({
   return (
     <div className="bg-white rounded-xl shadow-md overflow-hidden mx-2 h-full w-full">
       <div className="h-48 w-full">
-        <img src={image} alt={title} className="h-full w-full object-cover" />
+        <img
+          src={image}
+          alt={title}
+          className="h-full w-full object-cover"
+          loading="lazy"
+        />
       </div>
       <div className="p-4">
         <h3 className="text-xl font-bold text-gray-800 mb-2 text-center">

@@ -14,8 +14,8 @@ export default function HeadTestimonialsline() {
     {
       id: 2,
       name: "Carlos Oliveira",
-      product: "ImunoFort",
-      text: "Há 3 meses não fico resfriado! Minha imunidade melhorou muito desde que comecei a tomar essas vitaminas.",
+      product: "DigestWell",
+      text: "Desde que comecei a usar o DigestWell, a minha digestão melhorou demais! Sinto menos inchaço e finalmente estou conseguindo ver resultados no meu peso.",
       image: "https://i.pravatar.cc/150?img=13",
       rating: 5,
     },
@@ -30,7 +30,7 @@ export default function HeadTestimonialsline() {
     {
       id: 4,
       name: "João Pereira",
-      product: "ImunoFort",
+      product: "PowerNatural",
       text: "Desde que comecei a tomar, minhas defesas melhoraram e meu cansaço crônico desapareceu. Recomendo!",
       image: "https://i.pravatar.cc/150?img=55",
       rating: 5,
@@ -46,8 +46,8 @@ export default function HeadTestimonialsline() {
     {
       id: 6,
       name: "Ricardo Almeida",
-      product: "ImunoFort",
-      text: "Como atleta, preciso de suplementação de qualidade. Estas vitaminas superaram todas as minhas expectativas!",
+      product: "DigestWell",
+      text: "O DigestWell me ajudou não só a me sentir mais leve e com a digestão em dia, mas também a me surpreender com a balança. Recomendo muito!",
       image: "https://i.pravatar.cc/150?img=3",
       rating: 5,
     },
