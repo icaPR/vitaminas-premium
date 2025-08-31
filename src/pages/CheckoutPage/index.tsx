@@ -70,8 +70,17 @@ export default function CheckoutPage() {
     } catch (error) {
       console.error("Erro ao limpar o histórico do checkout:", error);
     }
-
-    navigate("/thanks");
+    const getUtmQueryString = () => {
+      const storedParams = sessionStorage.getItem("utm_params");
+      if (storedParams) {
+        const utms = JSON.parse(storedParams);
+        return new URLSearchParams(utms).toString();
+      }
+      return "";
+    };
+    const utmQueryString = getUtmQueryString();
+    navigate(`/thanks?${utmQueryString}`);
+    //navigate("/thanks");
   };
 
   if (loading) {

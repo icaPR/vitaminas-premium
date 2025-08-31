@@ -85,8 +85,12 @@ export default function ProductCard({ product }: { product: Product }) {
       </div>
 
       <div className="p-4 flex-grow flex flex-col">
-        <h3 className="text-lg font-bold text-gray-900">{product.name}</h3>
-        <p className="text-sm text-gray-600 mt-1">{product.description}</p>
+        <h3 className="text-lg font-bold text-gray-900 truncate">
+          {product.name}
+        </h3>
+        <p className="text-sm text-gray-600 mt-1 truncate">
+          {product.description}
+        </p>
 
         <div className="mt-3">
           {renderStars(product.rating)}

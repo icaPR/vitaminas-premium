@@ -44,7 +44,7 @@ function LandingPage() {
       <div className="mx-auto py-8">
         <Headline />
         <VideoPlayer />
-        <Button to="/checkout"> COMPRAR AGORA KIT COMPLETO - 25% OFF 🛒</Button>
+        <Button to="/checkout"> COMPRAR AGORA KIT COMPLETO</Button>
         <Benefits />
         <Product />
         <Testimonials />
