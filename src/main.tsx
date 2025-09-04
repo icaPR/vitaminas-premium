@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/react";
 import { BrowserRouter } from "react-router-dom";
 import React from "react";
 import ReactDOM from "react-dom/client";
@@ -10,6 +11,7 @@ if (rootElement) {
     <React.StrictMode>
       <BrowserRouter>
         <App />
+        <Analytics />
       </BrowserRouter>
     </React.StrictMode>
   );
